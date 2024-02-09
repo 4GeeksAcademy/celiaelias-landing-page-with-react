@@ -99,16 +99,12 @@ const Card = (props) => {
 				<div className="card-body">
 					<h5 className="card-title text-center">{props.cardTitle}</h5>
 					<p className="card-text text-center">{props.cardDescription}</p>
-
 				</div>
 				<div className="card-footer text-center">
 					<a href="#" className="btn btn-primary">{props.button}</a>
 				</div>
 			</div>
-
 		</div>
-
-
 	);
 }
 
@@ -134,9 +130,7 @@ const Footer = (props) => {
 	return (
 		<footer id="footerpage" className="bg-dark text-center text-white">
 			<div className="container p-4">
-
 			</div>
-
 			<div className="text-center p-3">
 				{props.copyright}
 				<a className="text-white" href="">{props.link}</a>
@@ -148,7 +142,6 @@ const Footer = (props) => {
 Footer.proptypes = {
 	copyright: PropTypes.string,
 	link: PropTypes.string
-
 }
 
 //
@@ -172,14 +165,11 @@ const App = () => {
 				/>
 				<div className="card-group">{card}</div>
 			</div>
-
 			<Footer
 				copyright="© 2024 Copyright: "
 				link="My website"
 			/>
-
 		</React.Fragment>
-
 	);
 }
 export default App;
